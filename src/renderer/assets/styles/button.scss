@@ -1,0 +1,129 @@
+@import '~@branding';
+
+.button {
+  @apply relative whitespace-no-wrap bg-grey-lighter text-grey-text-high-contrast px-4 py-2 rounded;
+
+  transition: $fade-transition;
+
+  &.icon {
+    @apply py-0;
+  }
+
+  &:hover {
+    @apply bg-grey-lightest;
+  }
+
+  &:focus {
+    outline: var(--input-focus-border-color);
+  }
+
+  &[disabled] {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  &.type-main {
+    @apply w-full text-lg;
+  }
+
+  &.type-bordered {
+    @apply border-2 border-solid;
+
+    border-color: transparent;
+
+    &.button-active {
+      @apply border-2 border-solid;
+
+      background: var(--button-bg-color-active);
+      border-color: var(--button-border-color-active);
+
+      &:hover {
+        @apply border-2 border-solid;
+
+        background: var(--button-bg-color-active);
+        border-color: var(--button-border-color-active);
+      }
+    }
+
+    &:hover {
+      @apply bg-transparent border-2 border-solid;
+
+      background: var(--button-bg-color-active);
+      border-color: var(--button-border-color-hover);
+    }
+  }
+
+  &.type-danger {
+    @apply bg-red-light;
+
+    &:hover {
+      @apply bg-red-dark;
+    }
+  }
+
+  &.type-primary {
+    @apply bg-primary;
+
+    &:hover {
+      @apply bg-primary-light;
+    }
+  }
+
+  &.type-confirm.type-confirm {
+    @apply border-2;
+
+    background: var(--bg-lighter);
+
+    &.button-active {
+      @apply border-2 border-solid;
+
+      background: var(--button-bg-color-active);
+      border-color: var(--button-border-color-active);
+
+      &:hover {
+        @apply border-2 border-solid;
+
+        background: var(--button-bg-color-active);
+        border-color: var(--button-border-color-active);
+      }
+    }
+
+    &:hover {
+      @apply bg-transparent border-2 border-solid;
+
+      background: var(--button-bg-color-active);
+      border-color: var(--button-border-color-hover);
+    }
+  }
+
+  &.type-success {
+    @apply bg-green-dark;
+
+    &:hover {
+      @apply bg-green-dark;
+    }
+
+    &[disabled]:hover {
+      @apply bg-green-dark;
+    }
+  }
+
+  &.type-hollow {
+    @apply bg-transparent;
+
+    &:hover {
+      @apply bg-grey-darker;
+    }
+  }
+
+  &.type-hollow:not(:hover) {
+    background: none;
+  }
+
+  &.button-active {
+    @apply bg-primary;
+
+    &:hover {
+      @apply bg-primary-light;
+    }
+  }
+}

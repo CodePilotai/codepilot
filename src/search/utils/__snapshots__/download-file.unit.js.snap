@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@search/utils/download-file successfully downloads a file with a valid URL 1`] = `
+"{
+  \\"userId\\": 1,
+  \\"id\\": 1,
+  \\"title\\": \\"delectus aut autem\\",
+  \\"completed\\": false
+}"
+`;

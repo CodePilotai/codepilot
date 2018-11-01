@@ -1,0 +1,228 @@
+// ===
+// Define all shared branding variables here.
+//
+// Inside a Vue component <style>, you can
+// import these variables with:
+//
+// @import '~@branding';
+// ===
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+// LAYOUT
+$grid-padding: 10px;
+
+// TYPOGRAPHY
+// Same as GitHub
+$sans-serif-font-stack: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+// Same as Refined GitHub
+$code-font-stack-default: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+// Same as Monaco menu
+$context-menu-font-stack: Segoe WPC, Segoe UI, SFNSDisplay-Light, SFUIText-Light, HelveticaNeue-Light,s ans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.5;
+$base-line-height-pixel-padding: $base-font-size * (1 + ($base-line-height - 1) / 2);
+$base-border-width: 1px;
+$description-opacity: 0.8;
+
+// APP
+$app-bg: var(--app-bg);
+$app-border: var(--app-border);
+$app-text-color: var(--app-text-color);
+$app-disabled-text-color: var(--app-disabled-text-color);
+$app-highlight-bg: #f4df42;
+$app-light-green-color: #28a745;
+$app-white-color: #fff;
+$app-prominent-text-color: var(--app-prominent-text-color);
+$app-heading-text-color: $app-prominent-text-color;
+$app-error-bg: #a63d40;
+$app-error-text-color: $app-error-bg;
+$app-link-text-color: var(--primary-color-light);
+$app-border-radius: 3px;
+$app-box-shadow-color: rgba(#000, 0.1);
+$app-box-shadow-subtle: 0 $grid-padding / 2 $grid-padding $grid-padding / -2 $app-box-shadow-color;
+$fade-transition: background 0.15s ease, border-color 0.15s ease;
+
+// SELECTABLE ELEMENTS
+$selectable-highlighted-bg: var(--syntax-highlighted-bg);
+
+// SYNTAX HIGHLIGHTING
+$syntax-highlighted-bg: var(--syntax-highlighted-bg);
+
+// FORMS
+$input-border-width: $base-border-width;
+$input-font: var(--input-font, $sans-serif-font-stack);
+$input-height: calc(1em + #{$grid-padding * 2});
+$input-label-font-size: 0.7em;
+$input-label-height: strip-unit($input-label-font-size) * $base-line-height-pixel-padding;
+$button-border-width: var(--button-border-width);
+$button-border-style: var(--button-border-style);
+$button-border-color: var(--button-border-color);
+$button-border: $button-border-width $button-border-style $button-border-color;
+$button-dropdown-arrow-width: $grid-padding * 2;
+$button-dropdown-item-hover-bg: rgba(0, 0, 0, 0.3);
+$button-height: $base-line-height-pixel-padding + $grid-padding * 2 + $input-border-width * 2;
+// SIDEBAR
+$sidebar-bg: var(--sidebar-bg);
+$sidebar-default-width: 450px;
+$sidebar-min-width: 100px;
+$search-results-info-height: $base-font-size * $base-line-height + $grid-padding;
+$sidebar-transition-duration: 750ms;
+$sidebar-arrow-transition-duration: 350ms;
+$sidebar-resizer-width: $grid-padding / 2;
+$sidebar-resizer-arrow-width: 3 * $grid-padding;
+$sidebar-resizer-arrow-height: $input-height;
+
+// TOPBAR
+$top-bar-transition-duration: 750ms;
+$top-bar-logo-width: 350px;
+$top-bar-logo-width-to-height-ratio: 2.3;
+$top-bar-logo-height: $top-bar-logo-width / 2.3;
+$top-bar-logo-margin-bottom: $grid-padding * 5;
+
+// NAV BAR
+$nav-bar-margin-horizontal: $grid-padding / 2.5;
+
+// SEARCH
+$search-result-border-radius: $app-border-radius;
+$search-result-icon-size: 25px;
+$search-result-content-header-one-size: 22px;
+$search-result-content-header-two-size: 18px;
+$search-result-content-header: 16px;
+$search-result-meta-line-height: 20px;
+$search-result-content-img-height: 80px;
+
+// PRO LABEL
+$pro-label-padding-horizontal: 3px;
+$pro-label-bg: #219653;
+$pro-label-border-radius: 2px;
+$pro-label-font-size: 0.7em;
+$pro-label-line-height: 1;
+$pro-label-text-color: white;
+$pro-label-active-padding-horizontal: 2px;
+$pro-label-active-font-size: 0.55em;
+$pro-label-active-text-color: lightgray;
+$pro-label-active-bg: dimgray;
+
+// NUMBER OF RESULTS LABEL
+$no-results-border-radius: 10px;
+$no-results-padding: 0 0 0 5px;
+$no-results-margin-top: -4px;
+$no-results-font-size: 0.8em;
+$no-results-line-height: 17px;
+$no-results-bg: var(--no-results-bg, --input-bg);
+
+// SPINNER
+$spinner-default-size: 15px;
+$spinner-default-color: #aaa;
+$spinner-default-margin: 3px;
+$spinner-label-size: 3px;
+$spinner-label-margin: 0;
+
+// ONBOARDING
+$onboarding-max-content-width: 500px;
+$onboarding-max-container-width: 600px;
+$onboarding-arrows-size: 35px;
+$onboarding-progress-dots-size: 10px;
+$onboarding-progress-dots-border-width: 2px;
+$onboarding-progress-dots-border-color: var(--input-bg);
+$onboarding-progress-dots-visited-border-color: var(--selectable-selected-bg);
+$onboarding-quote-font-size: 0.9em;
+
+// INFOBAR
+$infobar-bg: var(--info-bar-bg);
+$infobar-stackoverflow-question-min-width: 60px;
+$infobar-github-additions-color: $app-light-green-color;
+$infobar-github-deletions-color: #cb2431;
+$pin-size: 14px;
+$infobar-height: $base-font-size + (4.3 * $grid-padding);
+
+// VALIDATION
+$validation-font-size: 0.9em;
+
+// NOTIFICATION
+$notification-type-font-size: 0.7em;
+$notification-message-font-size: 0.9em;
+
+// VIEW PANE
+$pre-code-padding: 10px 15px;
+$settings-pane-min-width: 600px;
+
+// TAGS
+$tag-font-size: 10px;
+$tag-padding: 2px 7px;
+$tag-margin: 0 6px 0 0;
+
+// SEARCH DROPDOWN
+$search-dropdown-font-size: 13px;
+
+// CONTEXT MENU
+$context-menu-width: 250px;
+$context-menu-background-color: #2d2f31;
+$selected-menu-item-background-color: rgba(187, 187, 187, 0.15);
+$context-menu-separator-color: rgba(187, 187, 187, 0.5);
+$context-menu-item-text-color: #4080d0;
+$context-menu-accelerator-text-color: #bbb;
+$context-menu-font-size: 12px;
+
+// CUSTOM SOURCE UI
+$source-intent-width: 155px;
+$source-button-width: 100px;
+$source-height: $grid-padding * 2 + $base-font-size + $base-border-width * 2;
+$source-input-width: 250px;
+$source-url-input-max-width: 600px;
+
+// GLOBAL SMILEY FACE
+$global-smiley-face-font-size: 1.5em;
+
+// LANGUAGE CHIP
+$language-chip-height: $search-result-icon-size;
+$language-chip-padding: $search-result-icon-size;
+$language-chip-font-size: $search-dropdown-font-size;
+$language-chip-background-color: var(--language-chip-background-color);
+$language-chip-font-color: var(--language-chip-font-color);
+$language-chip-line-height: $search-result-icon-size;
+$language-chip-border-radius: $search-result-icon-size;
+
+// ===
+// When you need a variable to be available
+// within JavaScript, add it to the exported
+// object below. Then in JavaScript:
+//
+// import branding from '@/branding.scss'
+//
+// `branding` will be an object where every
+// property has a String value, e.g.:
+//
+// {
+//   gridPadding: "10px"
+// }
+//
+// Note that for numeric values, you will
+// need to parse them before doing any math, e.g.:
+//
+// const padding = parseInt(branding.gridPadding)
+// ===
+
+:export {
+  // stylelint-disable
+  _appTextColor: $app-text-color;
+  _app-disabled-text-color: $app-disabled-text-color;
+  _baseFontSize: $base-font-size;
+  _baseLineHeight: $base-line-height;
+  _gridPadding: $grid-padding;
+  _inputHeight: $input-height;
+  _codeFontStackDefault: $code-font-stack-default;
+  _sansSerifFontStack: $sans-serif-font-stack;
+  _sidebarMinWidth: $sidebar-min-width;
+  _sidebarDefaultWidth: $sidebar-default-width;
+  _selectableHighlightedBg: $selectable-highlighted-bg;
+  _topBarTransitionDuration: $top-bar-transition-duration;
+  // stylelint-enable
+}

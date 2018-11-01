@@ -1,0 +1,7 @@
+dist/
+static/
+coverage/
+fixtures/
+branding.scss
+package.json
+README.md

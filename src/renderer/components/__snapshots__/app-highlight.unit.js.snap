@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@components/app-highlight doesn’t do anything if no match is found 1`] = `<span>this.$store.state.test</span>`;
+
+exports[`@components/app-highlight highlights all partial matches 1`] = `<span><span class="testClass">this</span>.$store.<span class="testClass">state</span>.test</span>`;
+
+exports[`@components/app-highlight highlights all partial matches 2`] = `<span>this.$<span class="testClass">store</span>.state.<span class="testClass">test</span></span>`;
+
+exports[`@components/app-highlight highlights all partial matches 3`] = `<span><span class="testClass">this</span>.$store.<span class="testClass">state</span>.test</span>`;
+
+exports[`@components/app-highlight injects a highlighting span over matched text 1`] = `<span>this.<span class="testClass">$store.state</span>.test</span>`;

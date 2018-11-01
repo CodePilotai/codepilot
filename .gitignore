@@ -1,0 +1,22 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log.*
+*.log
+
+# Build Artifacts
+dist_electron/*
+build/*
+!build/icons
+
+# Test Artifacts
+coverage/
+
+# Tooling Artifacts
+.idea/
+!.gitkeep

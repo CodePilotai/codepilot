@@ -1,0 +1,6 @@
+test/unit/coverage/**
+test/unit/*.js
+test/e2e/fixtures/**
+test/e2e/specs/*.js
+test/e2e/*.js
+

@@ -1,0 +1,20 @@
+{
+  "scope": "http://api.github.com:80",
+  "method": "POST",
+  "path": "/graphql",
+  "body": {
+    "operationName": null,
+    "variables": {},
+    "query": "{\n  repository(owner: \"learnerty\", name: \"my-note\") {\n    description\n    updatedAt\n    stargazers {\n      totalCount\n      __typename\n    }\n    licenseInfo {\n      name\n      __typename\n    }\n    __typename\n  }\n}\n"
+  },
+  "status": 301,
+  "response": "",
+  "rawHeaders": [
+    "Content-length",
+    "0",
+    "Location",
+    "https://api.github.com/graphql",
+    "Connection",
+    "close"
+  ]
+}

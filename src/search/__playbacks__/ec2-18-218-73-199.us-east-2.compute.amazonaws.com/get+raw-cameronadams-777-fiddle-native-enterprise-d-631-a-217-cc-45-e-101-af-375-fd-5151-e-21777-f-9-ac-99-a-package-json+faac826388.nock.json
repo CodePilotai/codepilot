@@ -1,0 +1,82 @@
+{
+  "scope": "https://ec2-18-218-73-199.us-east-2.compute.amazonaws.com:443",
+  "method": "GET",
+  "path": "/raw/cameronadams777/fiddle-native-enterprise/d631a217cc45e101af375fd5151e21777f9ac99a/package.json",
+  "body": "",
+  "status": 200,
+  "response": {
+    "name": "fiddle-native",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "A Quasar Framework application for offline web development",
+    "productName": "Fiddle Native",
+    "cordovaId": "org.fiddle.native.app",
+    "author": "Cameron Adams <cameronadams777@gmail.com>",
+    "private": true,
+    "scripts": {
+      "dev": "quasar dev -m electron",
+      "lint": "eslint --ext .js,.vue src"
+    },
+    "dependencies": {
+      "lodash": "^4.17.10",
+      "vue-codemirror": "^4.0.5",
+      "vue-electron": "^1.0.6"
+    },
+    "devDependencies": {
+      "babel-eslint": "^8.2.1",
+      "devtron": "1.4.0",
+      "electron": "2.0.0",
+      "electron-debug": "1.5.0",
+      "electron-devtools-installer": "2.2.4",
+      "electron-packager": "^12.0.1",
+      "eslint": "^4.18.2",
+      "eslint-config-standard": "^11.0.0",
+      "eslint-friendly-formatter": "^4.0.1",
+      "eslint-loader": "^2.0.0",
+      "eslint-plugin-import": "^2.9.0",
+      "eslint-plugin-node": "^6.0.1",
+      "eslint-plugin-promise": "^3.7.0",
+      "eslint-plugin-standard": "^3.0.1",
+      "eslint-plugin-vue": "^4.3.0",
+      "quasar-cli": "^0.16.0"
+    },
+    "engines": {
+      "node": ">= 8.9.0",
+      "npm": ">= 5.6.0",
+      "yarn": ">= 1.6.0"
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10"
+    ]
+  },
+  "rawHeaders": [
+    "Content-Length",
+    "1253",
+    "Content-Security-Policy",
+    "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "Strict-Transport-Security",
+    "max-age=31536000",
+    "Vary",
+    "Authorization,Accept-Encoding",
+    "X-Content-Type-Options",
+    "nosniff",
+    "X-Frame-Options",
+    "deny",
+    "X-XSS-Protection",
+    "1; mode=block",
+    "ETag",
+    "\"91ba2ee1099283895ecd0881c5ea4d8d987ad10e\"",
+    "Content-Type",
+    "text/plain; charset=utf-8",
+    "Cache-Control",
+    "max-age=300",
+    "X-Geo-Block-List",
+    "",
+    "Date",
+    "Thu, 11 Oct 2018 15:40:37 GMT",
+    "Connection",
+    "close"
+  ]
+}

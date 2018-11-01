@@ -1,0 +1,72 @@
+{
+  "scope": "https://ec2-18-218-73-199.us-east-2.compute.amazonaws.com:443",
+  "method": "POST",
+  "path": "/api/graphql",
+  "body": {
+    "operationName": null,
+    "variables": {},
+    "query": "{\n  repository(owner: \"cameronadams777\", name: \"fiddle-native-enterprise\") {\n    description\n    updatedAt\n    stargazers {\n      totalCount\n      __typename\n    }\n    licenseInfo {\n      name\n      __typename\n    }\n    __typename\n  }\n}\n"
+  },
+  "status": 200,
+  "response": {
+    "data": {
+      "repository": {
+        "description": null,
+        "updatedAt": "2018-09-06T20:25:54Z",
+        "stargazers": {
+          "totalCount": 0,
+          "__typename": "StargazerConnection"
+        },
+        "licenseInfo": {
+          "name": "MIT License",
+          "__typename": "License"
+        },
+        "__typename": "Repository"
+      }
+    }
+  },
+  "rawHeaders": [
+    "Server",
+    "GitHub.com",
+    "Date",
+    "Thu, 11 Oct 2018 15:40:35 GMT",
+    "Content-Type",
+    "application/json; charset=utf-8",
+    "Content-Length",
+    "230",
+    "Connection",
+    "close",
+    "Status",
+    "200 OK",
+    "Cache-Control",
+    "no-cache",
+    "X-OAuth-Scopes",
+    "repo",
+    "X-Accepted-OAuth-Scopes",
+    "repo",
+    "X-GitHub-Enterprise-Version",
+    "2.14.1",
+    "X-GitHub-Media-Type",
+    "github.v4; format=json",
+    "Access-Control-Expose-Headers",
+    "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+    "Access-Control-Allow-Origin",
+    "*",
+    "X-GitHub-Request-Id",
+    "4b4335f3-c4e0-4b88-a15b-59891c9e6bed",
+    "Strict-Transport-Security",
+    "max-age=31536000; includeSubdomains",
+    "X-Frame-Options",
+    "deny",
+    "X-Content-Type-Options",
+    "nosniff",
+    "X-XSS-Protection",
+    "1; mode=block",
+    "Referrer-Policy",
+    "origin-when-cross-origin, strict-origin-when-cross-origin",
+    "Content-Security-Policy",
+    "default-src 'none'",
+    "X-Runtime-rack",
+    "0.027553"
+  ]
+}

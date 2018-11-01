@@ -1,0 +1,115 @@
+/* stylelint-disable */
+.v-step {
+  @apply shadow-md;
+
+  max-width: 320px;
+  padding: 1rem;
+  color: white;
+  text-align: left;
+  background: var(--search-dropdown-highlighted-bg);
+  border-radius: 3px;
+}
+
+.v-step .v-step__arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0.5rem;
+  border-style: solid;
+}
+
+.v-step .v-step__arrow {
+  border: 1px solid var(--search-dropdown-highlighted-bg);
+
+  &--dark {
+    border-color: #454d5d;
+  }
+}
+
+.v-step[x-placement^='top'] {
+  margin-bottom: 0.5rem;
+}
+
+.v-step[x-placement^='top'] .v-step__arrow {
+  bottom: -0.5rem;
+  left: calc(50% - 1rem);
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 0.5rem 0.5rem 0 0.5rem;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.v-step[x-placement^='bottom'] {
+  margin-top: 0.5rem;
+}
+
+.v-step[x-placement^='bottom'] .v-step__arrow {
+  top: -0.5rem;
+  left: calc(50% - 1rem);
+  margin-top: 0;
+  margin-bottom: 0;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.v-step[x-placement^='right'] {
+  margin-left: 0.5rem;
+}
+
+.v-step[x-placement^='right'] .v-step__arrow {
+  top: calc(50% - 1rem);
+  left: -0.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 0.5rem 0.5rem 0.5rem 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.v-step[x-placement^='left'] {
+  margin-right: 0.5rem;
+}
+
+.v-step[x-placement^='left'] .v-step__arrow {
+  top: calc(50% - 1rem);
+  right: -0.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 0.5rem 0 0.5rem 0.5rem;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* Custom */
+
+.v-step__header {
+  padding: 0.5rem;
+  margin: -1rem -1rem 0.5rem;
+  background-color: #454d5d;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.v-step__content {
+  margin: 0 0 1rem 0;
+}
+
+.v-step__button {
+  @apply text-xs bg-grey text-grey-text-high-contrast px-4 py-2 rounded;
+
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    @apply bg-grey-lightest text-grey-text-high-contrast;
+  }
+}
