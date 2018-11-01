@@ -1,6 +1,6 @@
 {
   "name": "codepilot-ai",
-  "version": "5.0.0",
+  "version": "0.0.0-dev",
   "private": true,
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
@@ -115,7 +115,7 @@
     "appId": "ai.codepilot.app",
     "publish": {
       "provider": "s3",
-      "bucket": "codepilot-prod"
+      "bucket": "codepilot-test"
     },
     "directories": {
       "output": "build"
