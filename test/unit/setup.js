@@ -94,11 +94,10 @@ Object.defineProperty(window, 'localStorage', {
 // Global test constants
 
 global.testConstants = {
-  githubEnterpriseHostAddress:
-    'https://ec2-18-218-73-199.us-east-2.compute.amazonaws.com',
-  githubApiToken: 'fbe95c9b0bda66a90073a127a4172eaaee432acd',
-  githubEnterpriseToken: '06a49675566b29485550af2bc7de9e025bb34186',
-  youtubeToken: 'AIzaSyC7e3jPXD_OTO1XZxlez3vEmUglOlGPc4k'
+  githubEnterpriseHostAddress: '',
+  githubApiToken: '',
+  githubEnterpriseToken: '',
+  youtubeToken: ''
 }
 
 // ===
