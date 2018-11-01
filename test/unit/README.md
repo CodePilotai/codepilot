@@ -19,7 +19,7 @@ yarn unit:record src/path/to/unit/test.unit.js
 ## File Structure
 
 ```bash
-codepilot-vue
+codepilot
 |- src # Unit tests live next to the file they test, with the .unit.js extension
 |- test
    |- unit

@@ -6,7 +6,7 @@ export default () => {
     label: 'Release Notes',
     click() {
       shell.openExternal(
-        'https://github.com/CodePilotai/codepilot-vue/pulls?q=is%3Apr+is%3Aclosed'
+        'https://github.com/CodePilotai/codepilot/pulls?q=is%3Apr+is%3Aclosed'
       )
     }
   }

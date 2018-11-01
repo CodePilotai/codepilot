@@ -16,7 +16,7 @@ yarn lint
 #### File Structure
 
 ``` bash
-codepilot-vue
+codepilot
 |- test
 |  |- unit # unit tests
 |  |- e2e
