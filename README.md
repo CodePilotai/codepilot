@@ -192,7 +192,7 @@ If you've been working on the same problem, without success, for more than an ho
 
 - `static`: Will include any assets you want to bypass the build process. For example, a `favicon.ico` file will often go here in a typical web application.
 
-- `test`: We don't currently have any tests, but we have the infrastructure for them. If you try to run them, it'll actually fail right now, because it doesn't like that there are no unit tests and also doesn't like the `.md` files throughout the project. We'll have to play with the regex in `test/unit/index.js` to exclude them.
+- `test`: Contains the configuration for our testing setup. However, unit tests are stored next to the files that are being tested.
 
 ## Filenames
 
