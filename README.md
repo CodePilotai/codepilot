@@ -192,7 +192,7 @@ If you've been working on the same problem, without success, for more than an ho
 
 - `static`: Will include any assets you want to bypass the build process. For example, a `favicon.ico` file will often go here in a typical web application.
 
-- `test`: Contains the configuration for our testing setup. However, unit tests are stored next to the files that are being tested.
+- `test`: Contains the configuration for our testing setup. Unit tests are stored next to the files that are being tested.
 
 ## Filenames
 
