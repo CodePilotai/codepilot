@@ -39,7 +39,9 @@ if (process.env.SPECTRON) {
 }
 
 // Force Single Instance Application
-const shouldQuit = app.makeSingleInstance((argv, workingDirectory) => {
+// const shouldQuit = app.makeSingleInstance((argv, workingDirectory) => {
+const shouldQuit = app.requestSingleInstanceLock()
+app.on('second-instance', (event, argv, workingDirectory) => {
   // Someone tried to run a second instance, we should focus our window.
 
   // Protocol handler for win32

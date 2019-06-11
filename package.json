@@ -56,7 +56,7 @@
     "url": "~0.11.0",
     "v-tooltip": "2.0.0-rc.33",
     "vscode-ripgrep": "^1.1.0",
-    "vue": "~2.5.17",
+    "vue": "~2.6.10",
     "vue-electron": "~1.0.6",
     "vue-global-events": "~1.0.3",
     "vue-monaco": "~0.2.x",
@@ -73,7 +73,7 @@
     "@mapbox/stylelint-processor-arbitrary-tags": "~0.2.0",
     "@sinonjs/formatio": "^2.0.0",
     "@vue/cli-plugin-babel": "^3.0.1",
-    "@vue/cli-plugin-e2e-nightwatch": "^3.0.1",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-plugin-unit-jest": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
@@ -85,7 +85,7 @@
     "babel-loader": "^8.0.2",
     "babel-plugin-rewire": "1.2.0-rc.1",
     "cross-env": "~5.2.0",
-    "electron": "^2.0.12",
+    "electron": "^5.0.3",
     "hygen": "~1.6.2",
     "jest-playback": "~2.0.0",
     "lint-staged": "^7.2.2",
@@ -105,7 +105,7 @@
     "stylelint-scss": "~3.3.0",
     "thanks": "~2.0.0",
     "vue-cli-plugin-electron-builder": "1.0.0-rc.3",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.10"
   },
   "license": "SEE LICENSE IN license.txt",
   "description": "Quickly find code you can reuse or learn from",
@@ -124,7 +124,8 @@
       "dist_electron/**/*"
     ],
     "dmg": {
-      "contents": [{
+      "contents": [
+        {
           "x": 410,
           "y": 150,
           "type": "link",
