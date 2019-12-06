@@ -16,7 +16,7 @@ This and others READMEs in the repo serve as living documents and the source of 
 ``` bash
 # Install dependencies
 # If you don't have yarn installed: `npm install --global yarn`
-yarn install
+yarn add 
 
 # Launch and serve with live reload at localhost:9080
 yarn dev
