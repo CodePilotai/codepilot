@@ -3,7 +3,7 @@ import LRU from 'lru-cache'
 import store from '@state/store'
 import PQueue from 'p-queue'
 
-const cache = LRU(1000)
+const cache = new LRU(1000)
 const cacheEndpointBlacklist = ['rate_limit']
 const queue = new PQueue({ concurrency: 10 })
 
@@ -44,10 +44,10 @@ export default function githubApiGet({
             Accept: hostAddress
               ? ''
               : endpoint.includes('search/commits')
-                ? // https://developer.github.com/v3/search/#search-commits
-                  'application/vnd.github.cloak-preview'
-                : // https://developer.github.com/v3/#current-version
-                  'application/vnd.github.v3+json',
+              ? // https://developer.github.com/v3/search/#search-commits
+                'application/vnd.github.cloak-preview'
+              : // https://developer.github.com/v3/#current-version
+                'application/vnd.github.v3+json',
             Authorization: accessToken
           })
           .timeout({
