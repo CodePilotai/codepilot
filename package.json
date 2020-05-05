@@ -52,6 +52,8 @@
     "tailwindcss": "^1.4.4",
     "temp": "^0.9.1",
     "url": "~0.11.0",
+    "v-tooltip": "^2.0.3",
+    "vscode-ripgrep": "^1.5.8",
     "vue": "^2.6.11",
     "vue-electron": "~1.0.6",
     "vue-octicon": "~2.1.1",
