@@ -9433,6 +9433,11 @@ nan@^2.12.1, nan@^2.13.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.1.tgz#d7be34dfa3105b91494c3147089315eff8874b01"
   integrity sha512-isWHgVjnFjh2x2yuJ/tj3JbwoHu3UC2dX5G/88Cm24yB6YopVgxvBObDY7n5xW6ExmFhJpSEQqFPvq9zaXc8Jw==
 
+nano-assign@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nano-assign/-/nano-assign-1.0.1.tgz#abb1c50d0416b865fb37bbd155c5368bb54378e5"
+  integrity sha512-1K8ncUoAYFPYcCZqrB+K2XQaFCmA35rryJCtPkGrG3zYkwm+iIUZRIHyaAfuy6zxaK9siPdjeJq7+Inijm6xhw==
+
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -14411,6 +14416,11 @@ vue-electron@~1.0.6:
   resolved "https://registry.yarnpkg.com/vue-electron/-/vue-electron-1.0.6.tgz#e798e03180b8933539defe31f92e53b9242b9406"
   integrity sha1-55jgMYC4kzU53v4x+S5TuSQrlAY=
 
+vue-global-events@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/vue-global-events/-/vue-global-events-1.1.2.tgz#aae6e221d095ab6fc82ce5d3a40ba3b9ebdfaab7"
+  integrity sha512-iZv/IBUNzVkwN+OraP6bxvcy/yld3snrfK8M5np5afAstFEPMj78xj+slereYycNQ7/W+pdYkSDKoK7hjT5BPw==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
@@ -14442,6 +14452,14 @@ vue-loader@^15.9.1:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-monaco@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-monaco/-/vue-monaco-1.2.0.tgz#7436e821af478aef7c707e21c4853f341d47345f"
+  integrity sha512-M+VyY2daIZ9RXQDMsRvIYgsHjR2CP1rAVDDw9ITpwGAK8WsWxRblJXbF2FeSHmYkI784xu8jh8YSngilf8EJDQ==
+  dependencies:
+    monaco-editor "^0.20.0"
+    nano-assign "^1.0.0"
 
 vue-multiselect@^2.1.6:
   version "2.1.6"
