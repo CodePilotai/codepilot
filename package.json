@@ -45,6 +45,7 @@
     "url": "~0.11.0",
     "vue-electron": "~1.0.6",
     "vue-octicon": "~2.1.1",
+    "vuex": "^3.3.0",
     "youtube-search-promise": "~1.0.3"
   },
   "devDependencies": {
