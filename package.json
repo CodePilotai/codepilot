@@ -42,6 +42,7 @@
     "markdown-it": "^10.0.0",
     "mkdirp": "^1.0.4",
     "node-fetch": "^2.6.0",
+    "p-queue": "^6.4.0",
     "url": "~0.11.0",
     "vue-electron": "~1.0.6",
     "vue-octicon": "~2.1.1",
