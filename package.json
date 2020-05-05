@@ -47,6 +47,7 @@
     "node-fetch": "^2.6.0",
     "normalize.css": "^8.0.1",
     "p-queue": "^6.4.0",
+    "parse-full-name": "^1.2.4",
     "rxjs": "^6.5.5",
     "superagent": "^5.2.2",
     "tailwindcss": "^1.4.4",
