@@ -49,6 +49,7 @@
     "p-queue": "^6.4.0",
     "rxjs": "^6.5.5",
     "superagent": "^5.2.2",
+    "tailwindcss": "^1.4.4",
     "url": "~0.11.0",
     "vue": "^2.6.11",
     "vue-electron": "~1.0.6",
