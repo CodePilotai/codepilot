@@ -59,7 +59,6 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/test-utils": "^1.0.0",
-    "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-rewire": "^1.2.0",
