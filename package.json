@@ -1,6 +1,6 @@
 {
     "name": "codepilot-ai",
-    "version": "1.0.3-dev",
+    "version": "1.0.4-dev",
     "private": true,
     "scripts": {
         "postinstall": "electron-builder install-app-deps",
