@@ -1,3 +1,5 @@
+# *** NOTICE: Looking for help addressing vulnerabilities due to outdated packages
+
 # CodePilot.ai
 
 This and others READMEs in the repo serve as living documents and the source of truth for our development practices.
