@@ -1,19 +1,16 @@
 <template>
-  <div
-    id="app"
-    class="flex flex-col bg-grey"
-  >
-    <AppTitleBar/>
+  <div id="app" class="flex flex-col bg-grey">
+    <AppTitleBar />
     <div class="flex flex-col py-1 overflow-hidden w-screen h-screen">
-      <TheGlobalModal/>
+      <TheGlobalModal />
       <template v-if="onboardingIsComplete">
-        <TheSearchBar/>
-        <PinsCollection v-if="searchIsFullWindow"/>
-        <TheGlobalNotification/>
-        <TheMainContainer/>
+        <TheSearchBar />
+        <PinsCollection v-if="searchIsFullWindow" />
+        <TheGlobalNotification />
+        <TheMainContainer />
       </template>
-      <TheOnboardingWizard v-else/>
-      <TheUserTutorials/>
+      <TheOnboardingWizard v-else />
+      <TheUserTutorials />
     </div>
   </div>
 </template>
