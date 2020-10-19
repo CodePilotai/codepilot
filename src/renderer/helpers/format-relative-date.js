@@ -1,5 +1,5 @@
 import parseDate from './parse-date'
-import distanceInWordsToNow from 'date-fns/distance_in_words_to_now'
+import distanceInWordsToNow from 'date-fns/formatDistance'
 
 export default date => {
   date = parseDate(date)
