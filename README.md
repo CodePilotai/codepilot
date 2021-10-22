@@ -20,7 +20,7 @@ This and others READMEs in the repo serve as living documents and the source of 
 # If you don't have yarn installed: `npm install --global yarn`
 yarn install
 
-# Launch and serve with live reload at localhost:9080
+# Launch and serve with live reload at localhost:8080
 yarn dev
 ````
 ## Build application
